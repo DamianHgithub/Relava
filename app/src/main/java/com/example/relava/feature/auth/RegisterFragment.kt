@@ -5,10 +5,12 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.relava.R
 import com.example.relava.databinding.FragmentRegisterBinding
+import org.koin.android.viewmodel.ext.android.sharedViewModel
 
 class RegisterFragment: Fragment(R.layout.fragment_register) {
     private lateinit var binding: FragmentRegisterBinding
     private lateinit var authActivity: AuthActivity
+    private val vm by sharedViewModel<AuthViewModel>()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentRegisterBinding.bind(view)
