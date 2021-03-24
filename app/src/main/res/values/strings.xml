@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">Relava</string>
+    <string name="app_name">Bolava</string>
+    <string name="register_message">Don\'t have an account?</string>
+    <string name="login_message">Already have an account?</string>
+    <string name="register_notify">Register here!</string>
+    <string name="login_notify">Login here!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="error">This field must not be empty!</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout_warning">Do you really want to log out?</string>
+    <string name="change_password">Change password</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="permissions">You need to allow all requested permissions, otherwise app won\'t be working properly.</string>
+    <string name="ok">Ok</string>
 </resources>
