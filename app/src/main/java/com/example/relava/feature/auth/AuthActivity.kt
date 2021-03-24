@@ -21,7 +21,7 @@ class AuthActivity : AppCompatActivity() {
             commit()
         }
     }
-    private fun changeFragment() {
+    fun changeFragment() {
         when (currentFragment()) {
             "LoginFragment" -> {
                 supportFragmentManager.beginTransaction().apply {

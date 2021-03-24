@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.AnimationUtils
+import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import androidx.lifecycle.lifecycleScope
 import com.example.relava.R
 import com.example.relava.databinding.ActivitySplashBinding
@@ -24,7 +25,7 @@ class SplashActivity : AppCompatActivity() {
             it.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
         }
         binding.root.animate().apply {
-            interpolator = AccelerateDecelerateInterpolator()
+            interpolator = FastOutSlowInInterpolator()
             alpha(1f)
         }
         lifecycleScope.launch {
